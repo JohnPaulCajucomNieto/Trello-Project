@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Forum" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative:wght@700&family=Comfortaa:wght@500&family=Cookie&family=Crimson+Text:wght@600&family=IBM+Plex+Sans:wght@700&family=Lato:ital,wght@1,300&family=Lilita+One&family=Lobster+Two&family=Montserrat&family=Raleway:wght@300;600&family=Ubuntu:wght@300;700&family=Yeseva+One&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Arimo&family=Barlow:wght@500&family=Bebas+Neue&family=Dancing+Script&family=Lobster&family=Montserrat:wght@100;400&family=Quicksand:wght@300&family=Roboto:wght@300&family=Tilt+Warp&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+    <title>ApartmentTour | Home</title>
+    <link rel="icon" href="C:\Users\QHTF\Documents\Codes\images\icons8-chef-hat-50.png">
+</head>
+<body>
+    <div class="div-home-1">
+        <div class="div-title-container">
+            <p class="logo">ApartmentTour: <br>Posting and Reviews </p>
+            <p class="title">Let us help <br>you find your <br>dream home.</p>
+            <div class="button-container">
+                <a href="crud.php"><button class="button-1">Find an Apartment</button></a>
+                <a href="#div-list-container-1"><button class="button-2">List an Apartment</button></a>
+            </div>
+        </div>   
+        <div class="image-home">   
+            <img class="pic-33-content" src="media/home-pic.png" alt="">
+       </div>
+    </div>
+    <div class="div-contact-1">
+        <div class="image-contact">
+            <img class="contact-pic" src="media/contact-pic.png" alt="">
+        </div>
+        <div class="div-contact-container">
+            <p class="contact-content">Our vision is to be the <br>most trusted and<br> respected real estate <br>agency in Cabanatuan City.</p>
+            <div class="button-container">
+                <a href="#div-about-1"><button class="button-1">Contact us</button></a>
+            </div>
+        </div>    
+    </div>
+    <div class="div-list-container-1" id="div-list-container-1">
+        <div class="list-header">
+            <h2>Apartment for Rent</h2>
+        </div>
+        <div class="div-apartments-container-1">
+            <div class="box1">
+                <div class="image-container">
+                    <img src="media/apartment1.PNG" alt="image" width="100%" height="100%">
+                </div>
+                <hr>
+                <br>
+                <div class="content-container">
+                    <p class="">rowhouse<br>123 Anywhere St., Any City<br>2 Beds | 1 Bath | 1 Car<br>
+                        Wheelchair accessible listing </p>
+                    <button class="button-2">$6900.00</button>
+                </div>
+                <br>
+                <hr>
+            </div>
+            <div class="box1">
+                <div class="image-container">
+                    <img src="media/apartment2.PNG" alt="image" width="100%" height="100%">
+                </div>   
+                <hr>
+                <br>
+                <div class="content-container">
+                    <p class="">rowhouse<br>123 Anywhere St., Any City<br>2 Beds | 1 Bath | 1 Car<br>
+                        Wheelchair accessible listing </p>
+                    <button class="button-2">$3000.00</button>    
+                </div>
+                <br>
+                <hr>
+            </div>
+            <div class="box1">
+                <div id="image-container"></div>
+                    <img src="media/apartment2.PNG" alt="image" width="100%" height="100%">
+                </div>
+                <hr>
+                <br>
+                <div class="content-container">
+                    <p class="">rowhouse<br>123 Anywhere St., Any City<br>2 Beds | 1 Bath | 1 Car<br></p>
+                    <button class="button-2">$4500.00</button>    
+                </div>
+                <br>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="div-review-container-1">
+        <div class="overlay">
+            <div class="review-header">
+                <h2>Our Reviews</h2>
+            </div>
+            <div class="list-review" id="reviews">
+                <div class="box-review1">
+                    <hr>
+                    <p>Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.</p>
+                </div>
+                <div class="box-review1">
+                    <hr>
+                    <p>Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable. <br><br>Boost your product and service's credibility by adding testimonials from your clients.</p>
+                </div>
+            </div>
+            <div class="review-div">
+                <button onclick="openReviewForm()" class="review-button">Write a Review</button>
+                <div class="overlay" id="overlay" onclick="closeReviewForm()"></div>
+                <div class="review-popup" id="reviewPopup">
+                    <textarea id="reviewText" placeholder="Enter your review"></textarea><br>
+                    <button onclick="addReview()" class="submit-review">Submit Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div-about-1" id="div-about-1">
+        <div class="div-about-container-1">
+            <p class="logo">ApartmentTour: <br>Posting and Reviews </p>
+        </div>
+        <div class="div-about-content-container-1">
+            <div class="about-box1">
+                <h2 class="about-header">Let's Talk</h2>
+                <p class="about-text">123 Anywhere St. Any City, ST  12345</p>
+                <p class="about-text">(123) 456-7890</p>
+                <p class="about-text">hello@reallygreatsite.com</p>
+                <p class="about-text1">GET SOCIAL</p>
+            </div>
+            <div class="about-box1">
+                <h2 class="about-header">Business Hours</h2>
+                <p class="schedule">Monday to Friday<br>
+                    (9:00 am to 6:00 pm)<br>
+                    Saturday<br>
+                    (9:00 am to 12:00 noon)<br><br>
+                    Sunday by appointment only.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+    <script>
+        // Retrieve uploadedFiles from local storage
+        var uploadedFiles = JSON.parse(localStorage.getItem('uploadedImages'));
+
+        if (uploadedFiles && uploadedFiles.length > 0) {
+            var imageContainer = document.getElementById('image-container');
+
+            // Display images on the next page
+            uploadedFiles.forEach(function (imageData) {
+                var image = new Image();
+                image.src = imageData;
+                imageContainer.appendChild(image);
+            });
+        } else {
+            console.log('No images available.');
+        }
+    </script>

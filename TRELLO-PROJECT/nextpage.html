@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+    <style>
+        #image-container img {
+            max-width: 100px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Images on the Next Page</h2>
+    <div id="image-container"></div>
+
+    <script>
+        // Retrieve uploadedFiles from local storage
+        var uploadedFiles = JSON.parse(localStorage.getItem('uploadedImages'));
+
+        if (uploadedFiles && uploadedFiles.length > 0) {
+            var imageContainer = document.getElementById('image-container');
+
+            // Display images on the next page
+            uploadedFiles.forEach(function (imageData) {
+                var image = new Image();
+                image.src = imageData;
+                imageContainer.appendChild(image);
+            });
+        } else {
+            console.log('No images available.');
+        }
+    </script>
+</body>
+</html>

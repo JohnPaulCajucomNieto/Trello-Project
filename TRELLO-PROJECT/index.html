@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review</title>
+  <style>
+    /* Style for the review section */
+    #review-section {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    /* Style for individual reviews */
+    .review {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="review-section">
+    <h2>Product Reviews</h2>
+
+    <!-- Existing reviews -->
+    <div class="review">
+      <h3>User123</h3>
+      <p>This product is amazing! I love it.</p>
+    </div>
+
+    <div class="review">
+      <h3>Customer456</h3>
+      <p>Not bad, but could be better.</p>
+    </div>
+
+    <!-- Button to add a review -->
+    <button id="add-review-btn" onclick="addReview()">Add Review</button>
+  </div>
+
+  <script>
+    function addReview() {
+      // Hardcoded review data for demonstration purposes
+      var username = "NewUser";
+      var comment = "This is a new review!";
+
+      // Create a new review div
+      var newReview = document.createElement("div");
+      newReview.className = "review";
+
+      // Populate the new review with username and comment
+      newReview.innerHTML = "<h3>" + username + "</h3><p>" + comment + "</p>";
+
+      // Append the new review to the review section
+      var reviewSection = document.getElementById("review-section");
+      reviewSection.appendChild(newReview);
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+body{
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+p{
+    margin:0;
+}
+
+.main-container{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 10px black;
+    top:0px;
+    left: 0px;
+    right: 0px;
+}
+
+.logo{
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 3px;
+    width: 170px;
+    height: 40px;
+    margin-left: 40px;
+}
+
+.ourlogo{
+    text-align: center;
+    margin-top: 5px;
+    font-family:'Genty', cursive;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+}
+
+a{
+    font-family: Ubuntu;
+    color: black;
+    text-decoration: none;
+}
+
+.navi{
+    word-spacing: 135px;
+}
+
+.homenavi{
+    color:brown;
+}
+
+.recipenavi:hover, .videonavi:hover{
+    text-decoration:underline;
+}
+
+
+.searchrecipe{
+    font-family: Montserrat;
+    background-color: rgb(230, 230, 230);
+    border-color: transparent;
+    border-radius: 20px;
+    margin-right: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 320px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+input[type="search"]{
+    outline: none;
+}
+.sec-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/media/bg-review.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 630px;
+}
+
+
+
+.description{
+    font-family: Lobster;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 2px solid white;
+    transition: all 0.30s;
+    padding: 20px;
+
+}
+
+.description:hover{
+    color: #AF8C53;
+    border: 2px solid #AF8C53;
+}
+
+
+
+.box{
+    background-color: rgba(0, 0, 0, 0.671);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 110px;
+    padding-right: 110px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;;
+}
+.table.div{
+    background-color:#343935;
+}
+.table2 table{
+    margin-left: 33%;
+}
